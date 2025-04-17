@@ -38,6 +38,7 @@ footer {
 .de .lang-en,
 .en .lang-de {
   display: none;
+}
 
 .certificate {
   display: flex;
@@ -74,6 +75,16 @@ footer {
   }
 }
 
+.badge-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px; /* nur kleiner Abstand zwischen Bild und Text */
+  margin-bottom: 30px;
+}
 
+.badge-description p {
+  margin: 0; /* entfernt Abstand zwischen den Zeilen */
+  line-height: 1.4;
 }
 
