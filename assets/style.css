@@ -84,6 +84,7 @@ footer {
   align-items: flex-start;
   gap: 4px; /* nur kleiner Abstand zwischen Bild und Text */
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .badge-description p {
