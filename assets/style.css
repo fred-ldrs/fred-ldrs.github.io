@@ -91,9 +91,9 @@ footer {
 .certificate-row {
   display: flex;
   align-items: flex-start;
-  gap: 15px;                /* kleinerer Abstand zwischen Badge und Beschreibung */
-  margin-bottom: 10px;      /* weniger Abstand zum nächsten Block */
-  padding-bottom: 10px;     /* schmalerer Innenabstand */
+  gap: 12px;                   /* Abstand zwischen Badge und Text */
+  margin-bottom: 0px;         /* kein zusätzlicher äußerer Abstand nach unten */
+  padding-bottom: 6px;        /* minimaler Innenabstand */
   border-bottom: 1px solid #ccc;
 }
 
@@ -108,16 +108,25 @@ footer {
   border: none;
 }
 
-.certificate-info p {
-  margin: 2px 0;
+.certificate-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
 }
 
-.certificate-info h3 {
-  margin: 0 0 6px 0;
-  font-size: 1.2em;
+.certificate-info h3,
+.certificate-info p {
+  margin: 2px 0;              /* minimaler Abstand zwischen den Textzeilen */
 }
 
 .certificate-info p {
   margin: 0;
   line-height: 1.4;
+}
+
+iframe {
+  display: block;
+  margin: 0;                  /* kein Außenabstand */
+  padding: 0;
 }
