@@ -33,3 +33,10 @@ footer {
   padding: 1rem;
   background-color: #eaeaea;
 }
+
+/* Sprachumschaltung */
+.de .lang-en,
+.en .lang-de {
+  display: none;
+}
+
