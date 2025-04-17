@@ -1,4 +1,4 @@
-/* Grundlegendes Layout */
+/* Basic page layout */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -26,6 +26,7 @@ h1, h2, h3 {
   color: #333;
 }
 
+/* Language toggle buttons */
 .language-toggle {
   text-align: right;
   margin-bottom: 10px;
@@ -44,11 +45,11 @@ h1, h2, h3 {
   background-color: #555;
 }
 
-/* Zertifikatsabschnitte */
+/* Certificate section (image + text) */
 section.certificate {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
+  padding: 8px 0 12px;
   display: flex;
   flex-direction: column;
 }
@@ -63,13 +64,13 @@ section.certificate {
   margin-top: 10px;
 }
 
-/* Badge-Anzeige im Row-Layout */
+/* Badge with side-by-side layout */
 .certificate-row {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  margin: 0;
-  padding: 8px 0;
+  gap: 12px;
+  margin: 4px 0;
+  padding: 4px 0;
   border-bottom: 1px solid #ccc;
 }
 
@@ -87,7 +88,22 @@ section.certificate {
 
 iframe {
   display: block;
-  margin: 0;
+  margin: 2px 0 0;
   padding: 0;
   border: none;
+  max-width: 200px;
+  height: 270px;
+  flex-shrink: 0;
+}
+
+/* Adjust spacing above and below iframes */
+.certificate-row iframe {
+  margin-top: 6px; /* small gap above */
+  margin-bottom: 0px; /* no gap below */
+}
+
+/* Reduce vertical gap between multiple certificate-rows */
+.certificate-row + .certificate-row {
+  margin-top: 0px;
+  padding-top: 0px;
 }
