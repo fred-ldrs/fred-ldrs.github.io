@@ -1,54 +1,55 @@
-/* Grundlegendes Layout */
+/* Basic page layout */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: Arial, sans-serif; /* Set default font */
+  line-height: 1.6; /* Improve readability */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Light gray background */
 }
 
 header, footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
   padding: 10px 0;
-  text-align: center;
+  text-align: center; /* Centered text */
 }
 
 main {
   padding: 20px;
-  background-color: #fff;
+  background-color: #fff; /* White background for content */
   max-width: 1000px;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Center content horizontally */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 h1, h2, h3 {
-  color: #333;
+  color: #333; /* Dark heading color */
 }
 
+/* Language toggle buttons */
 .language-toggle {
   text-align: right;
   margin-bottom: 10px;
 }
 
 .language-toggle button {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; /* Dark button */
+  color: #fff; /* White text */
   border: none;
   padding: 5px 10px;
   margin-left: 5px;
-  cursor: pointer;
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
 .language-toggle button:hover {
-  background-color: #555;
+  background-color: #555; /* Slightly lighter on hover */
 }
 
-/* Zertifikatsabschnitte */
+/* Certificate section (image + text) */
 section.certificate {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ccc; /* Gray separator */
+  padding: 8px 0 12px;
   display: flex;
   flex-direction: column;
 }
@@ -56,38 +57,39 @@ section.certificate {
 .certificate img {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: block; /* Prevent inline spacing */
 }
 
 .certificate-details {
-  margin-top: 10px;
+  margin-top: 10px; /* Space between image and text */
 }
 
-/* Badge-Anzeige im Row-Layout */
+/* Badge with side-by-side layout */
 .certificate-row {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin: 0;
-  padding: 8px 0;
-  border-bottom: 1px solid #ccc;
+  align-items: flex-start; /* Align badge and text at top */
+  gap: 12px; /* Space between badge and description */
+  margin: 4px 0;
+  padding: 4px 0 6px;
+  border-bottom: 1px solid #ccc; /* Gray separator between badges */
 }
 
 .certificate-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Vertically center the text */
   margin: 0;
 }
 
 .certificate-info h3,
 .certificate-info p {
-  margin: 2px 0;
+  margin: 2px 0; /* Minimal spacing between title and description */
 }
 
 iframe {
-  display: block;
-  margin: 0;
+  display: block; /* Ensure iframe appears on its own line */
+  margin: 4px 0 2px; /* Minimal margin above and below */
   padding: 0;
   border: none;
+  max-width: 200px; /* Set max width for consistency */
 }
