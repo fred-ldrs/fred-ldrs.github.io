@@ -130,3 +130,22 @@ iframe {
   margin: 0;                  /* kein Außenabstand */
   padding: 0;
 }
+
+.certificate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 12px;
+}
+
+.certificate-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
