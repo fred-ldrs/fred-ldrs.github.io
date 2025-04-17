@@ -97,6 +97,7 @@ footer {
 
 .certificate-row iframe {
   flex-shrink: 0;
+  border: none;
 }
 
 .certificate-info {
@@ -109,7 +110,8 @@ footer {
 
 .certificate-info p {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.4;
 }
+
 
 
