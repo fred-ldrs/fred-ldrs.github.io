@@ -133,14 +133,16 @@ iframe {
 
 .certificate-image {
   margin: 1rem 0;
-  text-align: left;
+  text-align: center;
 }
 
 .certificate-image img {
-  max-width: 300px;
-  width: 100%;
+  width: auto; /* Verhindert Verzug im Hochformat */
   height: auto;
+  max-width: 100%; /* Skalierung entsprechend der verfügbaren Breite */
+  max-height: 400px; /* Grenze für die Höhe im Hochformat */
   border: 1px solid #ccc;
   border-radius: 4px;
   display: block;
+  margin: 0 auto;
 }
