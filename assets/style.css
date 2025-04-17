@@ -108,8 +108,8 @@ footer {
   border: none;
 }
 
-.certificate-info {
-  max-width: 700px;
+.certificate-info p {
+  margin: 2px 0;
 }
 
 .certificate-info h3 {
