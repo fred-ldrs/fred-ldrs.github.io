@@ -130,3 +130,16 @@ iframe {
   margin: 0;                  /* kein Außenabstand */
   padding: 0;
 }
+
+.certificate-image {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.certificate-image img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
