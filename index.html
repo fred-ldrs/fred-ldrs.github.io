@@ -2,30 +2,31 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zertifikate | Frederik's Portfolio</title>
+  <title>Willkommen</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <script>
+    function toggleLanguage(lang) {
+      document.body.className = lang;
+    }
+  </script>
 </head>
-<body>
+<body class="de">
   <header>
-    <h1>Meine Zertifikate</h1>
+    <h1 class="lang-de">Willkommen auf meiner Zertifikatsseite</h1>
+    <h1 class="lang-en">Welcome to My Credentials Page</h1>
     <nav>
-      <a href="index.html">Startseite</a>
-      <a href="credentials-en.html">EN</a> | <a href="credentials-de.html">DE</a>
+      <button onclick="toggleLanguage('de')">Deutsch</button>
+      <button onclick="toggleLanguage('en')">English</button>
     </nav>
   </header>
-
   <main>
-    <ul>
-      <li><a href="IT-de.html">IT</a></li>
-      <li><a href="PM-de.html">Projektmanagement</a></li>
-      <li><a href="QM-de.html">Qualitätsmanagement</a></li>
-      <li><a href="Other-de.html">Sonstiges</a></li>
-    </ul>
+    <p class="lang-de">Hier findest du eine Übersicht meiner Zertifikate nach Themen sortiert.</p>
+    <p class="lang-en">Here you can find an overview of my credentials, organized by topic.</p>
+    <a href="credentials.html" class="button lang-de">Zur Übersicht</a>
+    <a href="credentials.html" class="button lang-en">Go to Overview</a>
   </main>
-
   <footer>
-    <p>&copy; 2025 Frederik | <a href="https://fred-ldrs.github.io">fred-ldrs.github.io</a></p>
+    <p>&copy; 2025 Frederik</p>
   </footer>
 </body>
 </html>
