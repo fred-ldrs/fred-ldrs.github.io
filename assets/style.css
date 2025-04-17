@@ -45,6 +45,16 @@ h1, h2, h3 {
   background-color: #555;
 }
 
+/* Hide all language sections by default */
+.language-section {
+  display: none;
+}
+
+/* Show active language */
+.language-section.active {
+  display: block;
+}
+
 /* Certificate section (image + text) */
 section.certificate {
   margin-bottom: 16px;
