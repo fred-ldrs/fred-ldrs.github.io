@@ -1,77 +1,111 @@
-/* Basic page layout */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-}
-
-header, footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-}
-
-main {
-  padding: 20px;
-  background-color: #fff;
-  max-width: 1000px;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2, h3 {
+  line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
 }
 
-/* Language toggle buttons */
-.language-toggle {
-  text-align: right;
-  margin-bottom: 10px;
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-.language-toggle button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  margin-left: 5px;
-  cursor: pointer;
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-.language-toggle button:hover {
-  background-color: #555;
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* Certificate section (image + text) */
-section.certificate {
-  margin-bottom: 16px;
-  border-bottom: 1px solid #ccc;
-  padding: 8px 0 12px;
+main {
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eaeaea;
+}
+
+/* Sprachumschaltung */
+.de .lang-en,
+.en .lang-de {
+  display: none;
+}
+
+.certificate {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
 }
 
+.certificate iframe,
 .certificate img {
+  flex: 0 0 auto;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 .certificate-details {
-  margin-top: 10px;
+  flex: 1;
+  min-width: 250px;
 }
 
-/* Badge with side-by-side layout */
+/* Responsive: Untereinander auf kleinen Bildschirmen */
+@media (max-width: 600px) {
+  .certificate {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .certificate-details {
+    min-width: unset;
+  }
+}
+
+.badge-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px; /* nur kleiner Abstand zwischen Bild und Text */
+  margin-bottom: 30px;
+}
+
+.badge-description p {
+  margin: 0; /* entfernt Abstand zwischen den Zeilen */
+  line-height: 1.4;
+}
+
 .certificate-row {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  margin: 4px 0;
-  padding: 4px 0;
+  gap: 12px;                   /* Abstand zwischen Badge und Text */
+  margin-bottom: 0px;         /* kein zusätzlicher äußerer Abstand nach unten */
+  padding-bottom: 6px;        /* minimaler Innenabstand */
   border-bottom: 1px solid #ccc;
+}
+
+.badge-frame {
+  flex-shrink: 0;
+}
+
+.badge-frame iframe {
+  display: block;
+  width: 200px;
+  height: 270px;
+  border: none;
 }
 
 .certificate-info {
@@ -83,27 +117,16 @@ section.certificate {
 
 .certificate-info h3,
 .certificate-info p {
-  margin: 2px 0;
+  margin: 2px 0;              /* minimaler Abstand zwischen den Textzeilen */
+}
+
+.certificate-info p {
+  margin: 0;
+  line-height: 1.4;
 }
 
 iframe {
   display: block;
-  margin: 2px 0 0;
+  margin: 0;                  /* kein Außenabstand */
   padding: 0;
-  border: none;
-  max-width: 200px;
-  height: 270px;
-  flex-shrink: 0;
-}
-
-/* Adjust spacing above and below iframes */
-.certificate-row iframe {
-  margin-top: 6px; /* small gap above */
-  margin-bottom: 0px; /* no gap below */
-}
-
-/* Reduce vertical gap between multiple certificate-rows */
-.certificate-row + .certificate-row {
-  margin-top: 0px;
-  padding-top: 0px;
 }
