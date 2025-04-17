@@ -42,15 +42,13 @@ footer {
 
 /* Container für das Zertifikat */
 .certificate {
-  display: block; /* Stelle sicher, dass der Container Block-Level ist */
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-/* Text und Links untereinander anzeigen */
-.certificate p, .certificate a {
-  display: block; /* Jedes Element wird unter dem vorherigen angezeigt */
-  margin-bottom: 1rem; /* Abstand zwischen den Elementen */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
 }
 
 .certificate iframe,
@@ -98,7 +96,6 @@ footer {
   margin-bottom: 0px;         /* kein zusätzlicher äußerer Abstand nach unten */
   padding-bottom: 6px;        /* minimaler Innenabstand */
   border-bottom: 1px solid #ccc;
-  text-align: center;
 }
 
 .badge-frame {
