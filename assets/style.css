@@ -42,19 +42,19 @@ footer {
 
 .certificate {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 40px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .certificate iframe,
 .certificate img {
-  flex: 0 0 auto;
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .certificate-details {
