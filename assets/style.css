@@ -42,13 +42,9 @@ footer {
 
 /* Container für das Zertifikat */
 .certificate {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 40px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
+  display: block; /* Stelle sicher, dass der Container Block-Level ist */
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 /* Text und Links untereinander anzeigen */
