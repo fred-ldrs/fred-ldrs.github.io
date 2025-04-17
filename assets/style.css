@@ -95,8 +95,12 @@ footer {
   margin-bottom: 30px;
 }
 
-.certificate-row iframe {
+.badge-frame {
   flex-shrink: 0;
+}
+
+.badge-frame iframe {
+  display: block;
   border: none;
 }
 
@@ -105,13 +109,15 @@ footer {
 }
 
 .certificate-info h3 {
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
+  font-size: 1.2em;
 }
 
 .certificate-info p {
   margin: 0;
   line-height: 1.4;
 }
+
 
 
 
