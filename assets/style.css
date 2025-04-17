@@ -40,6 +40,7 @@ footer {
   display: none;
 }
 
+/* Container für das Zertifikat */
 .certificate {
   display: flex;
   flex-wrap: wrap;
