@@ -101,6 +101,8 @@ footer {
 
 .badge-frame iframe {
   display: block;
+  width: 200px;
+  height: 270px;
   border: none;
 }
 
@@ -117,7 +119,3 @@ footer {
   margin: 0;
   line-height: 1.4;
 }
-
-
-
-
