@@ -84,7 +84,6 @@ footer {
   align-items: flex-start;
   gap: 4px; /* nur kleiner Abstand zwischen Bild und Text */
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .badge-description p {
@@ -99,6 +98,7 @@ footer {
   margin-bottom: 0px;         /* kein zusätzlicher äußerer Abstand nach unten */
   padding-bottom: 6px;        /* minimaler Innenabstand */
   border-bottom: 1px solid #ccc;
+  text-align: center;
 }
 
 .badge-frame {
