@@ -69,8 +69,8 @@ section.certificate {
   display: flex;
   align-items: flex-start; /* Align badge and text at top */
   gap: 12px; /* Space between badge and description */
-  margin: 4px 0;
-  padding: 4px 0 6px;
+  margin: 6px 0;
+  padding: 6px 0 4px; /* Minimal bottom padding */
   border-bottom: 1px solid #ccc; /* Gray separator between badges */
 }
 
@@ -88,7 +88,7 @@ section.certificate {
 
 iframe {
   display: block; /* Ensure iframe appears on its own line */
-  margin: 4px 0 2px; /* Minimal margin above and below */
+  margin: 4px 0 0; /* Tiny space above, no space below */
   padding: 0;
   border: none;
   max-width: 200px; /* Set max width for consistency */
