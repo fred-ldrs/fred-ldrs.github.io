@@ -49,8 +49,11 @@ footer {
   padding-bottom: 20px;
 }
 
-.certificate iframe {
+.certificate iframe,
+.certificate img {
   flex: 0 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .certificate-details {
@@ -58,15 +61,19 @@ footer {
   min-width: 250px;
 }
 
-  
-/* Optimierung Ansicht iframe für Mobilfunkgeräte */  
-/*.certificate iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 1rem;
+/* Responsive: Untereinander auf kleinen Bildschirmen */
+@media (max-width: 600px) {
+  .certificate {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .certificate-details {
+    min-width: unset;
+  }
 }
-  */
+
 
 }
 
